@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <!-- Created using Storyline 360 x64 - http://www.articulate.com  -->
-  <!-- version: 3.96.33815.0 -->
+  <!-- version: 3.130.39111.0 -->
   <title>Humane Transport And Animal Welfare</title>
   <meta http-equiv="x-ua-compatible" content="IE=edge"/>
   <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,shrink-to-fit=no,minimal-ui"/>
@@ -24,20 +24,20 @@
       tinCanPresent: false,
       cmi5Present: false,
       aoSupport: false,
-      scale: 'noscale',
+      scale: 'Scaled',
       captureRc: false,
       browserSize: 'optimal',
       bgColor: '#FFFFFF',
-      features: 'DropInAcc,DropInBase,DropInCore,DropInInteractions,DropInVideo,LayerPresentAsDialog,MultipleQuizTracking,UpdatedThemeEditor',
+      features: 'DropInBase,EngagePromiseUpgrade,FinalPromiseUpgrade,JsInteractions,Localization,PlayerMemoryEnhancements,SlideLevelScale,SlidePromiseUpgrade,StartupPromiseUpgrade,ViewPromiseUpgrade',
       themeName: 'unified',
       preloaderColor: '#8C8C8C',
       suppressAnalytics: false,
       productChannel: 'stable',
       publishSource: 'storyline',
-      aid: 'aid|b0a2133e-47f2-4e67-b51d-de4b56b2961b',
+      aid: 'aid|50b60fd2-0924-5551-95db-c2da228403b5',
       cid: 'faffd1a9-53e5-4431-bcdc-1d7b703a7c59',
-      playerVersion: '3.96.33815.0',
-      publishTimestamp: '2025-02-27T21:10:36.6261966Z',
+      playerVersion: '3.130.39111.0',
+      publishTimestamp: '2026-11-27T02:01:59.5266419Z',
       maxIosVideoElements: 10,
       connectionSettings: { message: 'You%20are%20offline.%20Trying%20to%20reconnect...', useDarkTheme: true, mode: 'normal' },
       hasFeature: function(feature) {
@@ -62,6 +62,15 @@
       }
 
     };
+
+    if (window.flagsUnderTest != null) {
+      window.globals.features = window.flagsUnderTest.reduce((accum, feature) => {
+        if (!accum.includes(feature)) {
+          accum.push(feature);
+        }
+        return accum;
+      }, window.globals.features.split(',')).join();
+    }
   </script>
   <script>
     var isIe11 = ('ActiveXObject' in window || window.MSBlobBuilder != null)
@@ -73,12 +82,13 @@
   </script>
 
   <script>
-    if (window.globals.hasFeature('MultiLanguageSinglePackageSupport')) {
+    if (window.globals.hasFeature('Localization')) {
       
       
     }
   </script>
 
+  
   
   <script>window.THREE = { };</script>
   
@@ -425,7 +435,7 @@
     function disableKeys() {
       if (DS.views && DS.views.nsStack && DS.views.nsStack.length === 1) {
         DS.views.nsStack[0].tabReachable = false
-        DS.views.nsStack[0].updateTabIndex(true, true);
+        DS.views.nsStack[0].updateTabIndex(true);
       }
 
       accStyle.innerHTML = '.acc-shadow-dom { display: none; }';

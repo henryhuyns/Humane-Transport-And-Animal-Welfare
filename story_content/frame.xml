@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<bwFrame xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" default_layout="npnxnanbnsnfns00000000001" textdirection="ltr" textengine="DirectWrite" device="false" fontscale="90" captionFontScale="100" kbshortcuts="false" skip_nav_enabled="true" chromeless="false" outputtype="undefined" theme="unified" themeAccentColor="0x9BBB59">
+<bwFrame xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" default_layout="npnxnanbnsnfns00000000001" textdirection="ltr" textengine="DirectWrite" device="false" fontscale="90" captionFontScale="100" kbshortcuts="false" skip_nav_enabled="true" chromeless="false" preventUpscale="true" outputtype="undefined" theme="unified" themeAccentColor="0x9BBB59">
   <layouts>
     <layout name="npnxnanbsnfns00000000001" font="Arial" controllayout="npnxnanbsnfns00000000001" colorscheme="npnxnanbnsnfns00000000001" string_table="npnxnanbnsnfns00000000001" />
     <layout name="pxabnsnfns00000000001" font="Arial" controllayout="pxabnsnfns00000000001" colorscheme="npnxnanbnsnfns00000000001" string_table="npnxnanbnsnfns00000000001" />
@@ -45,6 +45,7 @@
             </options>
           </option>
           <option name="logoAltText" />
+          <option name="logoAltTextEnabled" value="true" />
         </options>
       </optiongroup>
       <optiongroup name="menuoptions">
@@ -94,6 +95,7 @@
           <option name="placement" value="100" />
           <option name="backgroundColor" value="#000000FF" />
           <option name="color" value="#FFFFFFFF" />
+          <option name="textShadow" value="1" />
         </options>
       </optiongroup>
     </optiongroups>
@@ -1432,6 +1434,7 @@
     <string_table name="npnxnanbnsnfns00000000001">
       <string id="acc_cc_hide">Hide captions (Ctrl+Alt+C)</string>
       <string id="acc_cc_show">Show captions (Ctrl+Alt+C)</string>
+      <string id="acc_correct_choice">%answer% (correct choice)</string>
       <string id="acc_enter_fullscreen">Enter full-screen (Ctrl+Alt+F)</string>
       <string id="acc_exit_fullscreen">Exit full-screen (Ctrl+Alt+F)</string>
       <string id="acc_locked">locked</string>
@@ -1448,13 +1451,27 @@
       <string id="acc_mute">Mute (Ctrl+Alt+M)</string>
       <string id="acc_next">Next (Ctrl+Alt+Period)</string>
       <string id="acc_next_visual">Next (Ctrl+Alt+.)</string>
+      <string id="acc_ordinal_eighth">eighth</string>
+      <string id="acc_ordinal_fifth">fifth</string>
+      <string id="acc_ordinal_first">first</string>
+      <string id="acc_ordinal_fourth">fourth</string>
+      <string id="acc_ordinal_ninth">ninth</string>
+      <string id="acc_ordinal_second">second</string>
+      <string id="acc_ordinal_seventh">seventh</string>
+      <string id="acc_ordinal_sixth">sixth</string>
+      <string id="acc_ordinal_tenth">tenth</string>
+      <string id="acc_ordinal_third">third</string>
       <string id="acc_pause">Pause (Ctrl+Alt+P)</string>
       <string id="acc_play">Play (Ctrl+Alt+P)</string>
       <string id="acc_playback_speed">Playback speed</string>
+      <string id="acc_played">%time% played</string>
       <string id="acc_previous">Previous (Ctrl+Alt+Comma)</string>
       <string id="acc_previous_visual">Previous (Ctrl+Alt+,)</string>
       <string id="acc_replay">Replay (Ctrl+Alt+R)</string>
       <string id="acc_search_input">search</string>
+      <string id="acc_search_result_status">%count% result found for %term%</string>
+      <string id="acc_search_results_status">%count% results found for %term%</string>
+      <string id="acc_select_an_option">Select an option</string>
       <string id="acc_settings">Settings</string>
       <string id="acc_skipnavigation">Back to top</string>
       <string id="acc_slide_progress">slide progress</string>
@@ -1479,6 +1496,7 @@
       <string id="close">Close</string>
       <string id="closed_captions">Captions</string>
       <string id="closedcaptions_shortcut">Toggle captions</string>
+      <string id="comma_key">Comma</string>
       <string id="continueresponsive">Continue</string>
       <string id="ctrl_key">Ctrl</string>
       <string id="desktop_start">Start Course</string>
@@ -1501,6 +1519,8 @@
       <string id="next">NEXT</string>
       <string id="next_shortcut">Next</string>
       <string id="outline">Menu</string>
+      <string id="outline_container">Menu</string>
+      <string id="period_key">Period</string>
       <string id="playback_speed_normal">Normal</string>
       <string id="playback_speed_title">Playback Speed</string>
       <string id="playpause_shortcut">Play / pause</string>
@@ -1512,6 +1532,7 @@
       <string id="progress_minutes">minutes</string>
       <string id="progress_second">second</string>
       <string id="progress_seconds">seconds</string>
+      <string id="question_mark_key">Question mark</string>
       <string id="replay_shortcut">Replay</string>
       <string id="resources">Resources</string>
       <string id="restart">Restart</string>
@@ -1568,6 +1589,16 @@
       <string id="video_transcript_title">Transcripts</string>
       <string id="zoom_to_fit">Zoom to fit</string>
       <string id="continue">Continue</string>
+      <string id="video_transcript_mobile_label">Transcript</string>
+      <string id="invalid_prompt_button">OK</string>
+      <string id="invalid_prompt_message">You must complete the question before submitting.</string>
+      <string id="invalid_prompt_title">Invalid Answer</string>
+      <string id="print_prompt_button">OK</string>
+      <string id="print_prompt_title">Enter name</string>
+      <string id="print_prompt_message">Enter your name in the field below:</string>
+      <string id="timer_prompt_button">OK</string>
+      <string id="timer_prompt_title">Time Limit Exceeded</string>
+      <string id="timer_prompt_message">You have reached the time limit set for the quiz. Press 'OK' to continue.</string>
     </string_table>
   </string_tables>
   <fonts>
@@ -1582,230 +1613,230 @@
   <nav_data>
     <outline>
       <links>
-        <slidelink slideid="_player.5g6L9G63QDQ" displaytext="Home" expand="true" type="slide">
+        <slidelink slideid="_player.5g6L9G63QDQ" displaytext="Home" expand="true" type="slide" translationId="5uvPSeBLC4b">
           <links>
-            <slidelink slideid="_player.5g6L9G63QDQ.68del5p9CXU" displaytext="Home" expand="false" type="slide" />
-            <slidelink slideid="_player.5g6L9G63QDQ.5qaKrOuxfwH" displaytext="Intro" expand="false" type="slide" />
-            <slidelink slideid="_player.5g6L9G63QDQ.5vPAKo3X32t" displaytext="Menu" expand="false" type="slide" />
+            <slidelink slideid="_player.5g6L9G63QDQ.68del5p9CXU" displaytext="Home" expand="false" type="slide" translationId="5b1xo45SYxR" />
+            <slidelink slideid="_player.5g6L9G63QDQ.5qaKrOuxfwH" displaytext="Intro" expand="false" type="slide" translationId="6Wpr1ItbRGB" />
+            <slidelink slideid="_player.5g6L9G63QDQ.5vPAKo3X32t" displaytext="Menu" expand="false" type="slide" translationId="6GRmQdUPKTq" />
           </links>
         </slidelink>
-        <slidelink slideid="_player.6ivhIUK7x9B" displaytext="sub-menu" expand="true" type="slide">
+        <slidelink slideid="_player.6ivhIUK7x9B" displaytext="sub-menu" expand="true" type="slide" translationId="6mMkrnTNnBn">
           <links>
-            <slidelink slideid="_player.6ivhIUK7x9B.5pEBCKHtdxT" displaytext="Help" expand="false" type="slide" />
-            <slidelink slideid="_player.6ivhIUK7x9B.5mSxS26EzZd" displaytext="Exit" expand="false" type="slide" />
-            <slidelink slideid="_player.6ivhIUK7x9B.6WmFRBjGCq8" displaytext="About" expand="false" type="slide" />
+            <slidelink slideid="_player.6ivhIUK7x9B.5pEBCKHtdxT" displaytext="Help" expand="false" type="slide" translationId="6RJ2FtUxDCO" />
+            <slidelink slideid="_player.6ivhIUK7x9B.5mSxS26EzZd" displaytext="Exit" expand="false" type="slide" translationId="6XkdRSyB2ZM" />
+            <slidelink slideid="_player.6ivhIUK7x9B.6WmFRBjGCq8" displaytext="About" expand="false" type="slide" translationId="5yn3dKa8iUL" />
           </links>
         </slidelink>
-        <slidelink slideid="_player.5Vw1mQdAoRi" displaytext="Lesson-1" expand="true" type="slide">
+        <slidelink slideid="_player.5Vw1mQdAoRi" displaytext="Lesson-1" expand="true" type="slide" translationId="6YBZYJi4WEx">
           <links>
-            <slidelink slideid="_player.5Vw1mQdAoRi.5tDice1gU98" displaytext="Lesson 1 Introduction" expand="false" type="slide" />
-            <slidelink slideid="_player.5Vw1mQdAoRi.5vsewsm0Gsu" displaytext="Introduction to Humane Animal Transportation" expand="false" type="slide" />
-            <slidelink slideid="_player.5Vw1mQdAoRi.6dkJ0OfnKMF" displaytext="Quiz Overview" expand="false" type="slide" />
-            <slidelink slideid="_player.5Vw1mQdAoRi.6F2Ey4hlX0P" displaytext="Q1" expand="false" type="slide" />
-            <slidelink slideid="_player.5Vw1mQdAoRi.6NDtSmJdr1Z" displaytext="Q2" expand="false" type="slide" />
-            <slidelink slideid="_player.5Vw1mQdAoRi.6FM51LR3Ch3" displaytext="Q3" expand="false" type="slide" />
-            <slidelink slideid="_player.5Vw1mQdAoRi.66EOyoaSJJH" displaytext="Q4" expand="false" type="slide" />
-            <slidelink slideid="_player.5Vw1mQdAoRi.6BCrqLoUM0z" displaytext="Q5" expand="false" type="slide" />
-            <slidelink slideid="_player.5Vw1mQdAoRi.5jPBcMrRcRi" displaytext="Q6" expand="false" type="slide" />
-            <slidelink slideid="_player.5Vw1mQdAoRi.5hXRYlq5ywO" displaytext="Q7" expand="false" type="slide" />
-            <slidelink slideid="_player.5Vw1mQdAoRi.6934w0tR88P" displaytext="Q8" expand="false" type="slide" />
-            <slidelink slideid="_player.5Vw1mQdAoRi.60saYVQXsL9" displaytext="Q9" expand="false" type="slide" />
-            <slidelink slideid="_player.5Vw1mQdAoRi.68s43GCrNBC" displaytext="Q10" expand="false" type="slide" />
-            <slidelink slideid="_player.5Vw1mQdAoRi.6YmrqWYHri2" displaytext="Result" expand="false" type="slide" />
+            <slidelink slideid="_player.5Vw1mQdAoRi.5tDice1gU98" displaytext="Lesson 1 Introduction" expand="false" type="slide" translationId="6Ck5ZucJUBw" />
+            <slidelink slideid="_player.5Vw1mQdAoRi.5vsewsm0Gsu" displaytext="Introduction to Humane Animal Transportation" expand="false" type="slide" translationId="5XQ6fkatKv4" />
+            <slidelink slideid="_player.5Vw1mQdAoRi.6dkJ0OfnKMF" displaytext="Quiz Overview" expand="false" type="slide" translationId="6DiU2Zei0yR" />
+            <slidelink slideid="_player.5Vw1mQdAoRi.6F2Ey4hlX0P" displaytext="Q1" expand="false" type="slide" translationId="6nSUgStO7wa" />
+            <slidelink slideid="_player.5Vw1mQdAoRi.6NDtSmJdr1Z" displaytext="Q2" expand="false" type="slide" translationId="5iBRJfPrqyo" />
+            <slidelink slideid="_player.5Vw1mQdAoRi.6FM51LR3Ch3" displaytext="Q3" expand="false" type="slide" translationId="5zf8uFCQ8vl" />
+            <slidelink slideid="_player.5Vw1mQdAoRi.66EOyoaSJJH" displaytext="Q4" expand="false" type="slide" translationId="5syV2a9cPXb" />
+            <slidelink slideid="_player.5Vw1mQdAoRi.6BCrqLoUM0z" displaytext="Q5" expand="false" type="slide" translationId="5ySvC4YjDl9" />
+            <slidelink slideid="_player.5Vw1mQdAoRi.5jPBcMrRcRi" displaytext="Q6" expand="false" type="slide" translationId="6i1mGc5wNCl" />
+            <slidelink slideid="_player.5Vw1mQdAoRi.5hXRYlq5ywO" displaytext="Q7" expand="false" type="slide" translationId="6XuJW5wJG2f" />
+            <slidelink slideid="_player.5Vw1mQdAoRi.6934w0tR88P" displaytext="Q8" expand="false" type="slide" translationId="6b1stAHJpsn" />
+            <slidelink slideid="_player.5Vw1mQdAoRi.60saYVQXsL9" displaytext="Q9" expand="false" type="slide" translationId="5dgGmgQrC3n" />
+            <slidelink slideid="_player.5Vw1mQdAoRi.68s43GCrNBC" displaytext="Q10" expand="false" type="slide" translationId="6ZAzHXpejiK" />
+            <slidelink slideid="_player.5Vw1mQdAoRi.6YmrqWYHri2" displaytext="Result" expand="false" type="slide" translationId="5Ut34eTwvhR" />
           </links>
         </slidelink>
-        <slidelink slideid="_player.6l12wCqi8y6" displaytext="Lesson-2" expand="true" type="slide">
+        <slidelink slideid="_player.6l12wCqi8y6" displaytext="Lesson-2" expand="true" type="slide" translationId="6A7ranKKXQl">
           <links>
-            <slidelink slideid="_player.6l12wCqi8y6.5yv72fedBJM" displaytext="L2_Intro" expand="false" type="slide" />
-            <slidelink slideid="_player.6l12wCqi8y6.5pEcByGchdI" displaytext="Assessing Animal Fitness for Transport" expand="false" type="slide" />
-            <slidelink slideid="_player.6l12wCqi8y6.65FX9DgRIen" displaytext="Pre-Transport Preparation" expand="false" type="slide" />
-            <slidelink slideid="_player.6l12wCqi8y6.5XUhmlnprVS" displaytext="Best Practices for Loading &amp;amp; Handling" expand="false" type="slide" />
-            <slidelink slideid="_player.6l12wCqi8y6.6iE2Q98Lnjx" displaytext="Legal Requirements for Transport Durations" expand="false" type="slide" />
-            <slidelink slideid="_player.6l12wCqi8y6.6EDLfr3MO4t" displaytext="Quiz Overview" expand="false" type="slide" />
-            <slidelink slideid="_player.6l12wCqi8y6.6q9DRbpEF5d" displaytext="Q1" expand="false" type="slide" />
-            <slidelink slideid="_player.6l12wCqi8y6.5Uw5DLH2O3W" displaytext="Q3" expand="false" type="slide" />
-            <slidelink slideid="_player.6l12wCqi8y6.6eo64K9vkdS" displaytext="Q5" expand="false" type="slide" />
-            <slidelink slideid="_player.6l12wCqi8y6.5Uy1UFCRS68" displaytext="Q6" expand="false" type="slide" />
-            <slidelink slideid="_player.6l12wCqi8y6.5rOIP96EwGB" displaytext="Q8" expand="false" type="slide" />
-            <slidelink slideid="_player.6l12wCqi8y6.5oD9tKSpSR3" displaytext="Q10" expand="false" type="slide" />
-            <slidelink slideid="_player.6l12wCqi8y6.5WOnxb7kY4u" displaytext="Q2" expand="false" type="slide" />
-            <slidelink slideid="_player.6l12wCqi8y6.6Y3F1zUlU5C" displaytext="Q4" expand="false" type="slide" />
-            <slidelink slideid="_player.6l12wCqi8y6.6OIlMEwKLkD" displaytext="Q7" expand="false" type="slide" />
-            <slidelink slideid="_player.6l12wCqi8y6.5hDLCl29AZa" displaytext="Q9" expand="false" type="slide" />
-            <slidelink slideid="_player.6l12wCqi8y6.6gJQKi6Xsto" displaytext="Result" expand="false" type="slide" />
+            <slidelink slideid="_player.6l12wCqi8y6.5yv72fedBJM" displaytext="L2_Intro" expand="false" type="slide" translationId="6lCeEaf53qJ" />
+            <slidelink slideid="_player.6l12wCqi8y6.5pEcByGchdI" displaytext="Assessing Animal Fitness for Transport" expand="false" type="slide" translationId="623inJMV4xJ" />
+            <slidelink slideid="_player.6l12wCqi8y6.65FX9DgRIen" displaytext="Pre-Transport Preparation" expand="false" type="slide" translationId="6XAKGzVg3Uu" />
+            <slidelink slideid="_player.6l12wCqi8y6.5XUhmlnprVS" displaytext="Best Practices for Loading &amp;amp; Handling" expand="false" type="slide" translationId="6L6ApIf75C2" />
+            <slidelink slideid="_player.6l12wCqi8y6.6iE2Q98Lnjx" displaytext="Legal Requirements for Transport Durations" expand="false" type="slide" translationId="5ZT2LU3NKhj" />
+            <slidelink slideid="_player.6l12wCqi8y6.6EDLfr3MO4t" displaytext="Quiz Overview" expand="false" type="slide" translationId="6lZih3xxYQB" />
+            <slidelink slideid="_player.6l12wCqi8y6.6q9DRbpEF5d" displaytext="Q1" expand="false" type="slide" translationId="6QYrLFpbX99" />
+            <slidelink slideid="_player.6l12wCqi8y6.5Uw5DLH2O3W" displaytext="Q3" expand="false" type="slide" translationId="5xdbbmFlvwA" />
+            <slidelink slideid="_player.6l12wCqi8y6.6eo64K9vkdS" displaytext="Q5" expand="false" type="slide" translationId="5XpMrl9suFY" />
+            <slidelink slideid="_player.6l12wCqi8y6.5Uy1UFCRS68" displaytext="Q6" expand="false" type="slide" translationId="6cf7Vgqyz12" />
+            <slidelink slideid="_player.6l12wCqi8y6.5rOIP96EwGB" displaytext="Q8" expand="false" type="slide" translationId="5dnIhASMpWQ" />
+            <slidelink slideid="_player.6l12wCqi8y6.5oD9tKSpSR3" displaytext="Q10" expand="false" type="slide" translationId="6SD5yYd04TP" />
+            <slidelink slideid="_player.6l12wCqi8y6.5WOnxb7kY4u" displaytext="Q2" expand="false" type="slide" translationId="69T4VyzjSIB" />
+            <slidelink slideid="_player.6l12wCqi8y6.6Y3F1zUlU5C" displaytext="Q4" expand="false" type="slide" translationId="6SWnjgnPzwi" />
+            <slidelink slideid="_player.6l12wCqi8y6.6OIlMEwKLkD" displaytext="Q7" expand="false" type="slide" translationId="6ox9mjQhV8I" />
+            <slidelink slideid="_player.6l12wCqi8y6.5hDLCl29AZa" displaytext="Q9" expand="false" type="slide" translationId="66ojuyT2jH1" />
+            <slidelink slideid="_player.6l12wCqi8y6.6gJQKi6Xsto" displaytext="Result" expand="false" type="slide" translationId="6bJ7NDbJvIr" />
           </links>
         </slidelink>
-        <slidelink slideid="_player.6icBIPrjcY4" displaytext="Lesson-3" expand="true" type="slide">
+        <slidelink slideid="_player.6icBIPrjcY4" displaytext="Lesson-3" expand="true" type="slide" translationId="5fQArT7CBJ2">
           <links>
-            <slidelink slideid="_player.6icBIPrjcY4.5WwfEQTcRt3" displaytext="L3_Intro" expand="false" type="slide" />
-            <slidelink slideid="_player.6icBIPrjcY4.6fqF9fATKs6" displaytext="Ensuring Optimal Transport Conditions" expand="false" type="slide" />
-            <slidelink slideid="_player.6icBIPrjcY4.63eN2MvWzTv" displaytext="Common Transport Risks &amp;amp; Stress Factors" expand="false" type="slide" />
-            <slidelink slideid="_player.6icBIPrjcY4.6cBlir8AqOO" displaytext="Emergency Response Plan for Transport Incidents" expand="false" type="slide" />
-            <slidelink slideid="_player.6icBIPrjcY4.6pdQvl4wO7R" displaytext="Quiz Overview" expand="false" type="slide" />
-            <slidelink slideid="_player.6icBIPrjcY4.5cZ0onFbUkR" displaytext="Q1" expand="false" type="slide" />
-            <slidelink slideid="_player.6icBIPrjcY4.5dfisA631Q2" displaytext="Q4" expand="false" type="slide" />
-            <slidelink slideid="_player.6icBIPrjcY4.63KFlR2O4Q4" displaytext="Q7" expand="false" type="slide" />
-            <slidelink slideid="_player.6icBIPrjcY4.5kKOrEmRbmq" displaytext="Q7" expand="false" type="slide" />
-            <slidelink slideid="_player.6icBIPrjcY4.6Q1CmsVVrjZ" displaytext="Q2" expand="false" type="slide" />
-            <slidelink slideid="_player.6icBIPrjcY4.6lfKE1nuGFW" displaytext="Q5" expand="false" type="slide" />
-            <slidelink slideid="_player.6icBIPrjcY4.6fIsvBs488D" displaytext="Q8" expand="false" type="slide" />
-            <slidelink slideid="_player.6icBIPrjcY4.6aGj7L27T0u" displaytext="Q3" expand="false" type="slide" />
-            <slidelink slideid="_player.6icBIPrjcY4.6LotNp7IHbc" displaytext="Q6" expand="false" type="slide" />
-            <slidelink slideid="_player.6icBIPrjcY4.627x9XyHm4t" displaytext="Q9" expand="false" type="slide" />
-            <slidelink slideid="_player.6icBIPrjcY4.66YX4UMKIvT" displaytext="Result" expand="false" type="slide" />
+            <slidelink slideid="_player.6icBIPrjcY4.5WwfEQTcRt3" displaytext="L3_Intro" expand="false" type="slide" translationId="67IQC8Gpnig" />
+            <slidelink slideid="_player.6icBIPrjcY4.6fqF9fATKs6" displaytext="Ensuring Optimal Transport Conditions" expand="false" type="slide" translationId="69NpPstXdJf" />
+            <slidelink slideid="_player.6icBIPrjcY4.63eN2MvWzTv" displaytext="Common Transport Risks &amp;amp; Stress Factors" expand="false" type="slide" translationId="5V56AGvdk1B" />
+            <slidelink slideid="_player.6icBIPrjcY4.6cBlir8AqOO" displaytext="Emergency Response Plan for Transport Incidents" expand="false" type="slide" translationId="5pKAg2LKVdz" />
+            <slidelink slideid="_player.6icBIPrjcY4.6pdQvl4wO7R" displaytext="Quiz Overview" expand="false" type="slide" translationId="6B8GLwEudqu" />
+            <slidelink slideid="_player.6icBIPrjcY4.5cZ0onFbUkR" displaytext="Q1" expand="false" type="slide" translationId="5ZL7NULNH7a" />
+            <slidelink slideid="_player.6icBIPrjcY4.5dfisA631Q2" displaytext="Q4" expand="false" type="slide" translationId="5XPgH5PExMn" />
+            <slidelink slideid="_player.6icBIPrjcY4.63KFlR2O4Q4" displaytext="Q7" expand="false" type="slide" translationId="6OVcd3lf9dT" />
+            <slidelink slideid="_player.6icBIPrjcY4.5kKOrEmRbmq" displaytext="Q7" expand="false" type="slide" translationId="6HiWgGwHszC" />
+            <slidelink slideid="_player.6icBIPrjcY4.6Q1CmsVVrjZ" displaytext="Q2" expand="false" type="slide" translationId="5XpIqcDYfbk" />
+            <slidelink slideid="_player.6icBIPrjcY4.6lfKE1nuGFW" displaytext="Q5" expand="false" type="slide" translationId="6UKmlecSKLe" />
+            <slidelink slideid="_player.6icBIPrjcY4.6fIsvBs488D" displaytext="Q8" expand="false" type="slide" translationId="5blWDeYcIxe" />
+            <slidelink slideid="_player.6icBIPrjcY4.6aGj7L27T0u" displaytext="Q3" expand="false" type="slide" translationId="6mSAlKUCfa1" />
+            <slidelink slideid="_player.6icBIPrjcY4.6LotNp7IHbc" displaytext="Q6" expand="false" type="slide" translationId="5oqzBz8ZOn0" />
+            <slidelink slideid="_player.6icBIPrjcY4.627x9XyHm4t" displaytext="Q9" expand="false" type="slide" translationId="6kj9ejh32NY" />
+            <slidelink slideid="_player.6icBIPrjcY4.66YX4UMKIvT" displaytext="Result" expand="false" type="slide" translationId="6GVt7Y6eTvG" />
           </links>
         </slidelink>
-        <slidelink slideid="_player.6I3u7sMnsVE" displaytext="Lesson-4" expand="true" type="slide">
+        <slidelink slideid="_player.6I3u7sMnsVE" displaytext="Lesson-4" expand="true" type="slide" translationId="5zCZnDdM7gD">
           <links>
-            <slidelink slideid="_player.6I3u7sMnsVE.6mOI7X4N2kf" displaytext="L4_Intro" expand="false" type="slide" />
-            <slidelink slideid="_player.6I3u7sMnsVE.5fNF9Dssxk4" displaytext="Transport Conditions and Vehicle Requirements" expand="false" type="slide" />
-            <slidelink slideid="_player.6I3u7sMnsVE.5zUlFFeObqp" displaytext="Unloading Animals Safely" expand="false" type="slide" />
-            <slidelink slideid="_player.6I3u7sMnsVE.5XneVwP90za" displaytext="Post-Transport Health Checks" expand="false" type="slide" />
-            <slidelink slideid="_player.6I3u7sMnsVE.6enflfJKd5C" displaytext="Recovery &amp;amp; Rest Periods" expand="false" type="slide" />
-            <slidelink slideid="_player.6I3u7sMnsVE.5oWcujLLXMp" displaytext="CFIA Reporting &amp;amp; Compliance" expand="false" type="slide" />
-            <slidelink slideid="_player.6I3u7sMnsVE.6Xwao7Khf0W" displaytext="Quiz Overview" expand="false" type="slide" />
-            <slidelink slideid="_player.6I3u7sMnsVE.68S3ReSd93s" displaytext="Q1" expand="false" type="slide" />
-            <slidelink slideid="_player.6I3u7sMnsVE.6WuQiChe2Mz" displaytext="Q4" expand="false" type="slide" />
-            <slidelink slideid="_player.6I3u7sMnsVE.5s707mOBZtH" displaytext="Q5" expand="false" type="slide" />
-            <slidelink slideid="_player.6I3u7sMnsVE.643Sg6GYitq" displaytext="Q7" expand="false" type="slide" />
-            <slidelink slideid="_player.6I3u7sMnsVE.5zZrS833P2s" displaytext="Q8" expand="false" type="slide" />
-            <slidelink slideid="_player.6I3u7sMnsVE.5WW8Dgcpd6t" displaytext="Q10" expand="false" type="slide" />
-            <slidelink slideid="_player.6I3u7sMnsVE.5iQN4LHjjye" displaytext="Q2" expand="false" type="slide" />
-            <slidelink slideid="_player.6I3u7sMnsVE.5nR4UiLIDeZ" displaytext="Q6" expand="false" type="slide" />
-            <slidelink slideid="_player.6I3u7sMnsVE.5ytS6g4qgVT" displaytext="Q9" expand="false" type="slide" />
-            <slidelink slideid="_player.6I3u7sMnsVE.5cgWCLontyc" displaytext="Q9" expand="false" type="slide" />
-            <slidelink slideid="_player.6I3u7sMnsVE.6URzReK30i6" displaytext="Q3" expand="false" type="slide" />
-            <slidelink slideid="_player.6I3u7sMnsVE.5YIENaLOX7Y" displaytext="Q11" expand="false" type="slide" />
-            <slidelink slideid="_player.6I3u7sMnsVE.631S6hhbyTp" displaytext="Result" expand="false" type="slide" />
+            <slidelink slideid="_player.6I3u7sMnsVE.6mOI7X4N2kf" displaytext="L4_Intro" expand="false" type="slide" translationId="6aPi8Z1cHri" />
+            <slidelink slideid="_player.6I3u7sMnsVE.5fNF9Dssxk4" displaytext="Transport Conditions and Vehicle Requirements" expand="false" type="slide" translationId="62GdDqwlwf2" />
+            <slidelink slideid="_player.6I3u7sMnsVE.5zUlFFeObqp" displaytext="Unloading Animals Safely" expand="false" type="slide" translationId="5uUap8NC1kO" />
+            <slidelink slideid="_player.6I3u7sMnsVE.5XneVwP90za" displaytext="Post-Transport Health Checks" expand="false" type="slide" translationId="6Jh3fkowTok" />
+            <slidelink slideid="_player.6I3u7sMnsVE.6enflfJKd5C" displaytext="Recovery &amp;amp; Rest Periods" expand="false" type="slide" translationId="6HXzOUHTJdk" />
+            <slidelink slideid="_player.6I3u7sMnsVE.5oWcujLLXMp" displaytext="CFIA Reporting &amp;amp; Compliance" expand="false" type="slide" translationId="5pL5CHeduii" />
+            <slidelink slideid="_player.6I3u7sMnsVE.6Xwao7Khf0W" displaytext="Quiz Overview" expand="false" type="slide" translationId="5vSI9ui2H7h" />
+            <slidelink slideid="_player.6I3u7sMnsVE.68S3ReSd93s" displaytext="Q1" expand="false" type="slide" translationId="6ASrgjLECZX" />
+            <slidelink slideid="_player.6I3u7sMnsVE.6WuQiChe2Mz" displaytext="Q4" expand="false" type="slide" translationId="6MSVLpid46D" />
+            <slidelink slideid="_player.6I3u7sMnsVE.5s707mOBZtH" displaytext="Q5" expand="false" type="slide" translationId="68kWks6aW5h" />
+            <slidelink slideid="_player.6I3u7sMnsVE.643Sg6GYitq" displaytext="Q7" expand="false" type="slide" translationId="6MIxq84Ie7d" />
+            <slidelink slideid="_player.6I3u7sMnsVE.5zZrS833P2s" displaytext="Q8" expand="false" type="slide" translationId="5kbmwYZg6y1" />
+            <slidelink slideid="_player.6I3u7sMnsVE.5WW8Dgcpd6t" displaytext="Q10" expand="false" type="slide" translationId="69HwCcDRDRI" />
+            <slidelink slideid="_player.6I3u7sMnsVE.5iQN4LHjjye" displaytext="Q2" expand="false" type="slide" translationId="5kaLGMFlP4R" />
+            <slidelink slideid="_player.6I3u7sMnsVE.5nR4UiLIDeZ" displaytext="Q6" expand="false" type="slide" translationId="5rN8MbY6upi" />
+            <slidelink slideid="_player.6I3u7sMnsVE.5ytS6g4qgVT" displaytext="Q9" expand="false" type="slide" translationId="5VvoQTlhQ1P" />
+            <slidelink slideid="_player.6I3u7sMnsVE.5cgWCLontyc" displaytext="Q9" expand="false" type="slide" translationId="6avDkkB13Uf" />
+            <slidelink slideid="_player.6I3u7sMnsVE.6URzReK30i6" displaytext="Q3" expand="false" type="slide" translationId="5UtKdfHEAKU" />
+            <slidelink slideid="_player.6I3u7sMnsVE.5YIENaLOX7Y" displaytext="Q11" expand="false" type="slide" translationId="6VDmCyehLip" />
+            <slidelink slideid="_player.6I3u7sMnsVE.631S6hhbyTp" displaytext="Result" expand="false" type="slide" translationId="6Py88ugPipj" />
           </links>
         </slidelink>
-        <slidelink slideid="_player.6VVNk870dcL" displaytext="Lesson-5" expand="true" type="slide">
+        <slidelink slideid="_player.6VVNk870dcL" displaytext="Lesson-5" expand="true" type="slide" translationId="6CyMOEPHvvF">
           <links>
-            <slidelink slideid="_player.6VVNk870dcL.6NV4Ldi4TmE" displaytext="L5_Intro" expand="false" type="slide" />
-            <slidelink slideid="_player.6VVNk870dcL.5XG7hxQZKMX" displaytext="Overview of Animal Transport Laws &amp;amp; Regulations" expand="false" type="slide" />
-            <slidelink slideid="_player.6VVNk870dcL.5qZCJTucUej" displaytext="Ethical Responsibilities of Transporters" expand="false" type="slide" />
-            <slidelink slideid="_player.6VVNk870dcL.5dHSri7ThuA" displaytext="Consequences of Non-Compliance" expand="false" type="slide" />
-            <slidelink slideid="_player.6VVNk870dcL.6R8SI9XPmtC" displaytext="Real-World Case Studies" expand="false" type="slide" />
-            <slidelink slideid="_player.6VVNk870dcL.5xruGFxirFH" displaytext="Best Practices for Ethical Transport" expand="false" type="slide" />
-            <slidelink slideid="_player.6VVNk870dcL.6Am4DHqpyzB" displaytext="Quiz Overview" expand="false" type="slide" />
-            <slidelink slideid="_player.6VVNk870dcL.6OOwoHtoO3r" displaytext="Q1" expand="false" type="slide" />
-            <slidelink slideid="_player.6VVNk870dcL.6UjNDFs4PAW" displaytext="Q6" expand="false" type="slide" />
-            <slidelink slideid="_player.6VVNk870dcL.6Sivwds7sGp" displaytext="Q7" expand="false" type="slide" />
-            <slidelink slideid="_player.6VVNk870dcL.5uUKhmcG1yD" displaytext="Q10" expand="false" type="slide" />
-            <slidelink slideid="_player.6VVNk870dcL.61dplcs5Ar0" displaytext="Q2" expand="false" type="slide" />
-            <slidelink slideid="_player.6VVNk870dcL.6b5odXwUyQ1" displaytext="Q8" expand="false" type="slide" />
-            <slidelink slideid="_player.6VVNk870dcL.69CFZFVABcj" displaytext="Q3" expand="false" type="slide" />
-            <slidelink slideid="_player.6VVNk870dcL.5jesFBNixmI" displaytext="Q9" expand="false" type="slide" />
-            <slidelink slideid="_player.6VVNk870dcL.6059TZ2QA5m" displaytext="Q4" expand="false" type="slide" />
-            <slidelink slideid="_player.6VVNk870dcL.6i2AMgKFxvo" displaytext="Q5" expand="false" type="slide" />
-            <slidelink slideid="_player.6VVNk870dcL.61sOzLeUvCs" displaytext="Result" expand="false" type="slide" />
+            <slidelink slideid="_player.6VVNk870dcL.6NV4Ldi4TmE" displaytext="L5_Intro" expand="false" type="slide" translationId="5Zq8FIY1x15" />
+            <slidelink slideid="_player.6VVNk870dcL.5XG7hxQZKMX" displaytext="Overview of Animal Transport Laws &amp;amp; Regulations" expand="false" type="slide" translationId="6MvSrPjNgpm" />
+            <slidelink slideid="_player.6VVNk870dcL.5qZCJTucUej" displaytext="Ethical Responsibilities of Transporters" expand="false" type="slide" translationId="6T5IwON2ftg" />
+            <slidelink slideid="_player.6VVNk870dcL.5dHSri7ThuA" displaytext="Consequences of Non-Compliance" expand="false" type="slide" translationId="6EbmDHiUFTu" />
+            <slidelink slideid="_player.6VVNk870dcL.6R8SI9XPmtC" displaytext="Real-World Case Studies" expand="false" type="slide" translationId="6PUMR4WHXAG" />
+            <slidelink slideid="_player.6VVNk870dcL.5xruGFxirFH" displaytext="Best Practices for Ethical Transport" expand="false" type="slide" translationId="6jUwHkIFqrl" />
+            <slidelink slideid="_player.6VVNk870dcL.6Am4DHqpyzB" displaytext="Quiz Overview" expand="false" type="slide" translationId="6bpuPqyfAU0" />
+            <slidelink slideid="_player.6VVNk870dcL.6OOwoHtoO3r" displaytext="Q1" expand="false" type="slide" translationId="5ecywB6okGd" />
+            <slidelink slideid="_player.6VVNk870dcL.6UjNDFs4PAW" displaytext="Q6" expand="false" type="slide" translationId="5eCFIobBSFI" />
+            <slidelink slideid="_player.6VVNk870dcL.6Sivwds7sGp" displaytext="Q7" expand="false" type="slide" translationId="5jbc4goSTat" />
+            <slidelink slideid="_player.6VVNk870dcL.5uUKhmcG1yD" displaytext="Q10" expand="false" type="slide" translationId="5k4pU7yG4Bl" />
+            <slidelink slideid="_player.6VVNk870dcL.61dplcs5Ar0" displaytext="Q2" expand="false" type="slide" translationId="6WcuzzlrZ80" />
+            <slidelink slideid="_player.6VVNk870dcL.6b5odXwUyQ1" displaytext="Q8" expand="false" type="slide" translationId="6GFveblbbcQ" />
+            <slidelink slideid="_player.6VVNk870dcL.69CFZFVABcj" displaytext="Q3" expand="false" type="slide" translationId="5czPSW5aGEh" />
+            <slidelink slideid="_player.6VVNk870dcL.5jesFBNixmI" displaytext="Q9" expand="false" type="slide" translationId="5cstM6tr628" />
+            <slidelink slideid="_player.6VVNk870dcL.6059TZ2QA5m" displaytext="Q4" expand="false" type="slide" translationId="6dxBKwvBdDU" />
+            <slidelink slideid="_player.6VVNk870dcL.6i2AMgKFxvo" displaytext="Q5" expand="false" type="slide" translationId="6BcQ1d9RCZd" />
+            <slidelink slideid="_player.6VVNk870dcL.61sOzLeUvCs" displaytext="Result" expand="false" type="slide" translationId="6M3XUv2xlQ9" />
           </links>
         </slidelink>
-        <slidelink slideid="_player.5ez2Y9E2fOa" displaytext="Lesson-6" expand="true" type="slide">
+        <slidelink slideid="_player.5ez2Y9E2fOa" displaytext="Lesson-6" expand="true" type="slide" translationId="6hFhmst8hLe">
           <links>
-            <slidelink slideid="_player.5ez2Y9E2fOa.5gMJl6wQXJK" displaytext="L6_Intro" expand="false" type="slide" />
-            <slidelink slideid="_player.5ez2Y9E2fOa.6k08jmsgk1V" displaytext="Common Transport Emergencies" expand="false" type="slide" />
-            <slidelink slideid="_player.5ez2Y9E2fOa.62MJbjYPbu9" displaytext="Responding to Transport Emergencies" expand="false" type="slide" />
-            <slidelink slideid="_player.5ez2Y9E2fOa.6aTBmu0B6wO" displaytext="Preventing Emergencies" expand="false" type="slide" />
-            <slidelink slideid="_player.5ez2Y9E2fOa.67wjEpA9XcQ" displaytext="Quiz Overview" expand="false" type="slide" />
-            <slidelink slideid="_player.5ez2Y9E2fOa.6lG1tjOhPOQ" displaytext="Q1" expand="false" type="slide" />
-            <slidelink slideid="_player.5ez2Y9E2fOa.6iKl12YslGe" displaytext="Q2" expand="false" type="slide" />
-            <slidelink slideid="_player.5ez2Y9E2fOa.5VEs6fxnRwL" displaytext="Q7" expand="false" type="slide" />
-            <slidelink slideid="_player.5ez2Y9E2fOa.61Gi7r1Sp2H" displaytext="Q10" expand="false" type="slide" />
-            <slidelink slideid="_player.5ez2Y9E2fOa.5xOLPD6GhVd" displaytext="Q3" expand="false" type="slide" />
-            <slidelink slideid="_player.5ez2Y9E2fOa.66ksh8krSwb" displaytext="Q9" expand="false" type="slide" />
-            <slidelink slideid="_player.5ez2Y9E2fOa.6BKC89bg8RN" displaytext="Q4" expand="false" type="slide" />
-            <slidelink slideid="_player.5ez2Y9E2fOa.5nkxU5xc1on" displaytext="Q8" expand="false" type="slide" />
-            <slidelink slideid="_player.5ez2Y9E2fOa.67ySET39jaT" displaytext="Q5" expand="false" type="slide" />
-            <slidelink slideid="_player.5ez2Y9E2fOa.5Yq3GG47NQ6" displaytext="Q6" expand="false" type="slide" />
-            <slidelink slideid="_player.5ez2Y9E2fOa.69s64n6dLgw" displaytext="Result" expand="false" type="slide" />
+            <slidelink slideid="_player.5ez2Y9E2fOa.5gMJl6wQXJK" displaytext="L6_Intro" expand="false" type="slide" translationId="6caXYbNb8BL" />
+            <slidelink slideid="_player.5ez2Y9E2fOa.6k08jmsgk1V" displaytext="Common Transport Emergencies" expand="false" type="slide" translationId="6JNLmxAvErM" />
+            <slidelink slideid="_player.5ez2Y9E2fOa.62MJbjYPbu9" displaytext="Responding to Transport Emergencies" expand="false" type="slide" translationId="5W75KC0neiY" />
+            <slidelink slideid="_player.5ez2Y9E2fOa.6aTBmu0B6wO" displaytext="Preventing Emergencies" expand="false" type="slide" translationId="6NA2d7icpZp" />
+            <slidelink slideid="_player.5ez2Y9E2fOa.67wjEpA9XcQ" displaytext="Quiz Overview" expand="false" type="slide" translationId="5m3lxRUlfFa" />
+            <slidelink slideid="_player.5ez2Y9E2fOa.6lG1tjOhPOQ" displaytext="Q1" expand="false" type="slide" translationId="6PdR2GUUgzy" />
+            <slidelink slideid="_player.5ez2Y9E2fOa.6iKl12YslGe" displaytext="Q2" expand="false" type="slide" translationId="6GOGNsQYOAF" />
+            <slidelink slideid="_player.5ez2Y9E2fOa.5VEs6fxnRwL" displaytext="Q7" expand="false" type="slide" translationId="69FcLjO2eQy" />
+            <slidelink slideid="_player.5ez2Y9E2fOa.61Gi7r1Sp2H" displaytext="Q10" expand="false" type="slide" translationId="5ypajUEjMWD" />
+            <slidelink slideid="_player.5ez2Y9E2fOa.5xOLPD6GhVd" displaytext="Q3" expand="false" type="slide" translationId="6hUSJ5VJMzd" />
+            <slidelink slideid="_player.5ez2Y9E2fOa.66ksh8krSwb" displaytext="Q9" expand="false" type="slide" translationId="5llspsqdqHW" />
+            <slidelink slideid="_player.5ez2Y9E2fOa.6BKC89bg8RN" displaytext="Q4" expand="false" type="slide" translationId="6BNTBKlYLG2" />
+            <slidelink slideid="_player.5ez2Y9E2fOa.5nkxU5xc1on" displaytext="Q8" expand="false" type="slide" translationId="6Ekl8MCFyk9" />
+            <slidelink slideid="_player.5ez2Y9E2fOa.67ySET39jaT" displaytext="Q5" expand="false" type="slide" translationId="5Whi3BkBSKo" />
+            <slidelink slideid="_player.5ez2Y9E2fOa.5Yq3GG47NQ6" displaytext="Q6" expand="false" type="slide" translationId="5w951UGibkD" />
+            <slidelink slideid="_player.5ez2Y9E2fOa.69s64n6dLgw" displaytext="Result" expand="false" type="slide" translationId="67vNAgxENfu" />
           </links>
         </slidelink>
-        <slidelink slideid="_player.5Un4s0qqSXu" displaytext="Lesson-7" expand="true" type="slide">
+        <slidelink slideid="_player.5Un4s0qqSXu" displaytext="Lesson-7" expand="true" type="slide" translationId="5cNEyDeedBX">
           <links>
-            <slidelink slideid="_player.5Un4s0qqSXu.5jkvrwtrDqO" displaytext="L7_Intro" expand="false" type="slide" />
-            <slidelink slideid="_player.5Un4s0qqSXu.6ekjH7qpMW5" displaytext="Understanding Ethical Responsibilities" expand="false" type="slide" />
-            <slidelink slideid="_player.5Un4s0qqSXu.6K6n8oCfl62" displaytext="Recognizing Signs of Animal Distress" expand="false" type="slide" />
-            <slidelink slideid="_player.5Un4s0qqSXu.6AHf2WojPMf" displaytext="Untitled Slide" expand="false" type="slide" />
-            <slidelink slideid="_player.5Un4s0qqSXu.65wdiN2uTZL" displaytext="Quiz Overview" expand="false" type="slide" />
-            <slidelink slideid="_player.5Un4s0qqSXu.6LmPenW3r06" displaytext="Q1" expand="false" type="slide" />
-            <slidelink slideid="_player.5Un4s0qqSXu.66xQl8fwZbW" displaytext="Q2" expand="false" type="slide" />
-            <slidelink slideid="_player.5Un4s0qqSXu.6I1J9REswBP" displaytext="Q7" expand="false" type="slide" />
-            <slidelink slideid="_player.5Un4s0qqSXu.5lknZkziGHy" displaytext="Q9" expand="false" type="slide" />
-            <slidelink slideid="_player.5Un4s0qqSXu.642ojWapL3g" displaytext="Q12" expand="false" type="slide" />
-            <slidelink slideid="_player.5Un4s0qqSXu.69StZJfGyDJ" displaytext="Q3" expand="false" type="slide" />
-            <slidelink slideid="_player.5Un4s0qqSXu.6rYgkbngw2q" displaytext="Q8" expand="false" type="slide" />
-            <slidelink slideid="_player.5Un4s0qqSXu.6RUkqPKrWHA" displaytext="Q4" expand="false" type="slide" />
-            <slidelink slideid="_player.5Un4s0qqSXu.6romLeqVEjg" displaytext="Q10" expand="false" type="slide" />
-            <slidelink slideid="_player.5Un4s0qqSXu.6k24rKlweQr" displaytext="Q5" expand="false" type="slide" />
-            <slidelink slideid="_player.5Un4s0qqSXu.5XQScVQJOnU" displaytext="Q11" expand="false" type="slide" />
-            <slidelink slideid="_player.5Un4s0qqSXu.5kcTnRm4pAm" displaytext="Q6" expand="false" type="slide" />
-            <slidelink slideid="_player.5Un4s0qqSXu.5hxcuefSVot" displaytext="Result" expand="false" type="slide" />
+            <slidelink slideid="_player.5Un4s0qqSXu.5jkvrwtrDqO" displaytext="L7_Intro" expand="false" type="slide" translationId="5lzWjocyA4Z" />
+            <slidelink slideid="_player.5Un4s0qqSXu.6ekjH7qpMW5" displaytext="Understanding Ethical Responsibilities" expand="false" type="slide" translationId="6mUi1S6p5z7" />
+            <slidelink slideid="_player.5Un4s0qqSXu.6K6n8oCfl62" displaytext="Recognizing Signs of Animal Distress" expand="false" type="slide" translationId="6kYnni9JLm1" />
+            <slidelink slideid="_player.5Un4s0qqSXu.6AHf2WojPMf" displaytext="Untitled Slide" expand="false" type="slide" translationId="6EusfjNIomY" />
+            <slidelink slideid="_player.5Un4s0qqSXu.65wdiN2uTZL" displaytext="Quiz Overview" expand="false" type="slide" translationId="6CXOsMSeSTN" />
+            <slidelink slideid="_player.5Un4s0qqSXu.6LmPenW3r06" displaytext="Q1" expand="false" type="slide" translationId="6DHc1XMgXvE" />
+            <slidelink slideid="_player.5Un4s0qqSXu.66xQl8fwZbW" displaytext="Q2" expand="false" type="slide" translationId="6p2nS7SzsTh" />
+            <slidelink slideid="_player.5Un4s0qqSXu.6I1J9REswBP" displaytext="Q7" expand="false" type="slide" translationId="5ZUpN4XAnri" />
+            <slidelink slideid="_player.5Un4s0qqSXu.5lknZkziGHy" displaytext="Q9" expand="false" type="slide" translationId="6bJtjm7I46U" />
+            <slidelink slideid="_player.5Un4s0qqSXu.642ojWapL3g" displaytext="Q12" expand="false" type="slide" translationId="61Ay5PIQEn2" />
+            <slidelink slideid="_player.5Un4s0qqSXu.69StZJfGyDJ" displaytext="Q3" expand="false" type="slide" translationId="6pW8YGlYWFt" />
+            <slidelink slideid="_player.5Un4s0qqSXu.6rYgkbngw2q" displaytext="Q8" expand="false" type="slide" translationId="5VpAahDYpha" />
+            <slidelink slideid="_player.5Un4s0qqSXu.6RUkqPKrWHA" displaytext="Q4" expand="false" type="slide" translationId="6V0bVUeV5nY" />
+            <slidelink slideid="_player.5Un4s0qqSXu.6romLeqVEjg" displaytext="Q10" expand="false" type="slide" translationId="673iVZjZmkw" />
+            <slidelink slideid="_player.5Un4s0qqSXu.6k24rKlweQr" displaytext="Q5" expand="false" type="slide" translationId="6mrohy6ZaSD" />
+            <slidelink slideid="_player.5Un4s0qqSXu.5XQScVQJOnU" displaytext="Q11" expand="false" type="slide" translationId="5WKhTwbnJXh" />
+            <slidelink slideid="_player.5Un4s0qqSXu.5kcTnRm4pAm" displaytext="Q6" expand="false" type="slide" translationId="6BpdAPVeoSO" />
+            <slidelink slideid="_player.5Un4s0qqSXu.5hxcuefSVot" displaytext="Result" expand="false" type="slide" translationId="6HACXV9Ao6P" />
           </links>
         </slidelink>
-        <slidelink slideid="_player.5Ylk7jtkcBS" displaytext="Lesson-8" expand="true" type="slide">
+        <slidelink slideid="_player.5Ylk7jtkcBS" displaytext="Lesson-8" expand="true" type="slide" translationId="6XcJB1DM79B">
           <links>
-            <slidelink slideid="_player.5Ylk7jtkcBS.64BDwNT7M8G" displaytext="L8_Intro" expand="false" type="slide" />
-            <slidelink slideid="_player.5Ylk7jtkcBS.6i8el7o6Uk6" displaytext="Q1" expand="false" type="slide" />
-            <slidelink slideid="_player.5Ylk7jtkcBS.6gxp877P1Uf" displaytext="Q5" expand="false" type="slide" />
-            <slidelink slideid="_player.5Ylk7jtkcBS.6dOjQUAmFLz" displaytext="Q2" expand="false" type="slide" />
-            <slidelink slideid="_player.5Ylk7jtkcBS.6LInjt30V1o" displaytext="Q4" expand="false" type="slide" />
-            <slidelink slideid="_player.5Ylk7jtkcBS.6JdGleaWGKl" displaytext="Q3" expand="false" type="slide" />
-            <slidelink slideid="_player.5Ylk7jtkcBS.6JzNdF6odtV" displaytext="Q6" expand="false" type="slide" />
-            <slidelink slideid="_player.5Ylk7jtkcBS.6LLuHcwKgyA" displaytext="Q7" expand="false" type="slide" />
-            <slidelink slideid="_player.5Ylk7jtkcBS.6IjjbxF2EEt" displaytext="Q8" expand="false" type="slide" />
-            <slidelink slideid="_player.5Ylk7jtkcBS.5ZK66qtJjZt" displaytext="Q9" expand="false" type="slide" />
-            <slidelink slideid="_player.5Ylk7jtkcBS.6nEXTxv9DW6" displaytext="Q10" expand="false" type="slide" />
-            <slidelink slideid="_player.5Ylk7jtkcBS.5ycdSl3lyAE" displaytext="Understanding Emergency Situations" expand="false" type="slide" />
-            <slidelink slideid="_player.5Ylk7jtkcBS.6VEEBKnDeJw" displaytext="Immediate Response to Emergencies" expand="false" type="slide" />
-            <slidelink slideid="_player.5Ylk7jtkcBS.5hubkG76nln" displaytext="Handling Animal Injuries &amp;amp; Distress" expand="false" type="slide" />
-            <slidelink slideid="_player.5Ylk7jtkcBS.5bi5LUUyN2U" displaytext="Preventing Emergencies &amp;amp; Staying Compliant" expand="false" type="slide" />
-            <slidelink slideid="_player.5Ylk7jtkcBS.5mTMQdJYS2L" displaytext="Quiz Overview" expand="false" type="slide" />
-            <slidelink slideid="_player.5Ylk7jtkcBS.6qZn7GYo3WF" displaytext="Result" expand="false" type="slide" />
+            <slidelink slideid="_player.5Ylk7jtkcBS.64BDwNT7M8G" displaytext="L8_Intro" expand="false" type="slide" translationId="5y9VgeykPnl" />
+            <slidelink slideid="_player.5Ylk7jtkcBS.6i8el7o6Uk6" displaytext="Q1" expand="false" type="slide" translationId="5rVek14BmYu" />
+            <slidelink slideid="_player.5Ylk7jtkcBS.6gxp877P1Uf" displaytext="Q5" expand="false" type="slide" translationId="6WrqYUwJaoO" />
+            <slidelink slideid="_player.5Ylk7jtkcBS.6dOjQUAmFLz" displaytext="Q2" expand="false" type="slide" translationId="6JXXP30YpZZ" />
+            <slidelink slideid="_player.5Ylk7jtkcBS.6LInjt30V1o" displaytext="Q4" expand="false" type="slide" translationId="5r9bPpkPdmg" />
+            <slidelink slideid="_player.5Ylk7jtkcBS.6JdGleaWGKl" displaytext="Q3" expand="false" type="slide" translationId="5aWz8rdtF12" />
+            <slidelink slideid="_player.5Ylk7jtkcBS.6JzNdF6odtV" displaytext="Q6" expand="false" type="slide" translationId="69gII4EnCb8" />
+            <slidelink slideid="_player.5Ylk7jtkcBS.6LLuHcwKgyA" displaytext="Q7" expand="false" type="slide" translationId="5ctTxaryULD" />
+            <slidelink slideid="_player.5Ylk7jtkcBS.6IjjbxF2EEt" displaytext="Q8" expand="false" type="slide" translationId="6Zh7MAjcXqp" />
+            <slidelink slideid="_player.5Ylk7jtkcBS.5ZK66qtJjZt" displaytext="Q9" expand="false" type="slide" translationId="6A1M4wyAc65" />
+            <slidelink slideid="_player.5Ylk7jtkcBS.6nEXTxv9DW6" displaytext="Q10" expand="false" type="slide" translationId="5rAN9rpybIZ" />
+            <slidelink slideid="_player.5Ylk7jtkcBS.5ycdSl3lyAE" displaytext="Understanding Emergency Situations" expand="false" type="slide" translationId="6eOHPN2db0j" />
+            <slidelink slideid="_player.5Ylk7jtkcBS.6VEEBKnDeJw" displaytext="Immediate Response to Emergencies" expand="false" type="slide" translationId="6idRIPAIMG7" />
+            <slidelink slideid="_player.5Ylk7jtkcBS.5hubkG76nln" displaytext="Handling Animal Injuries &amp;amp; Distress" expand="false" type="slide" translationId="6lyJN5f6bAa" />
+            <slidelink slideid="_player.5Ylk7jtkcBS.5bi5LUUyN2U" displaytext="Preventing Emergencies &amp;amp; Staying Compliant" expand="false" type="slide" translationId="5xWLdTG6PTQ" />
+            <slidelink slideid="_player.5Ylk7jtkcBS.5mTMQdJYS2L" displaytext="Quiz Overview" expand="false" type="slide" translationId="5k5VWRyeFyn" />
+            <slidelink slideid="_player.5Ylk7jtkcBS.6qZn7GYo3WF" displaytext="Result" expand="false" type="slide" translationId="6jz5X74SIYj" />
           </links>
         </slidelink>
-        <slidelink slideid="_player.5xdVjgTZA74" displaytext="Lesson-9" expand="true" type="slide">
+        <slidelink slideid="_player.5xdVjgTZA74" displaytext="Lesson-9" expand="true" type="slide" translationId="5Vj4ElG6JgT">
           <links>
-            <slidelink slideid="_player.5xdVjgTZA74.5ZzgMLnsCIn" displaytext="L9_Intro" expand="false" type="slide" />
-            <slidelink slideid="_player.5xdVjgTZA74.5XJi05BlFgE" displaytext="Importance of Post-Transport Assessment" expand="false" type="slide" />
-            <slidelink slideid="_player.5xdVjgTZA74.69mMCXqdD2j" displaytext="Steps for Conducting a Welfare Check" expand="false" type="slide" />
-            <slidelink slideid="_player.5xdVjgTZA74.6g3AjSFQZqP" displaytext="Quiz Overview" expand="false" type="slide" />
-            <slidelink slideid="_player.5xdVjgTZA74.6SNeFljPsnD" displaytext="Q1" expand="false" type="slide" />
-            <slidelink slideid="_player.5xdVjgTZA74.5V4EQ7npMu9" displaytext="Q2" expand="false" type="slide" />
-            <slidelink slideid="_player.5xdVjgTZA74.6XoCJ5FESfT" displaytext="Q3" expand="false" type="slide" />
-            <slidelink slideid="_player.5xdVjgTZA74.6mgiVVA1yBm" displaytext="Q4" expand="false" type="slide" />
-            <slidelink slideid="_player.5xdVjgTZA74.6Zhl409du9G" displaytext="Q5" expand="false" type="slide" />
-            <slidelink slideid="_player.5xdVjgTZA74.5fNN7EJtePz" displaytext="Q6" expand="false" type="slide" />
-            <slidelink slideid="_player.5xdVjgTZA74.5thB5hHl9ZN" displaytext="Q7" expand="false" type="slide" />
-            <slidelink slideid="_player.5xdVjgTZA74.6eo4rnWqCHR" displaytext="Q8" expand="false" type="slide" />
-            <slidelink slideid="_player.5xdVjgTZA74.5bat6wdxxiG" displaytext="Q10" expand="false" type="slide" />
-            <slidelink slideid="_player.5xdVjgTZA74.5eroO03Cgco" displaytext="Q19" expand="false" type="slide" />
-            <slidelink slideid="_player.5xdVjgTZA74.6RdReHK2gnm" displaytext="Result" expand="false" type="slide" />
+            <slidelink slideid="_player.5xdVjgTZA74.5ZzgMLnsCIn" displaytext="L9_Intro" expand="false" type="slide" translationId="5cL3lCatGxW" />
+            <slidelink slideid="_player.5xdVjgTZA74.5XJi05BlFgE" displaytext="Importance of Post-Transport Assessment" expand="false" type="slide" translationId="6mmkX5tEr4f" />
+            <slidelink slideid="_player.5xdVjgTZA74.69mMCXqdD2j" displaytext="Steps for Conducting a Welfare Check" expand="false" type="slide" translationId="6mVN6jHRY1D" />
+            <slidelink slideid="_player.5xdVjgTZA74.6g3AjSFQZqP" displaytext="Quiz Overview" expand="false" type="slide" translationId="5gLoIPWGg63" />
+            <slidelink slideid="_player.5xdVjgTZA74.6SNeFljPsnD" displaytext="Q1" expand="false" type="slide" translationId="6WTJv93Xx4u" />
+            <slidelink slideid="_player.5xdVjgTZA74.5V4EQ7npMu9" displaytext="Q2" expand="false" type="slide" translationId="5fKzeY3aijb" />
+            <slidelink slideid="_player.5xdVjgTZA74.6XoCJ5FESfT" displaytext="Q3" expand="false" type="slide" translationId="6OV6KdscrfK" />
+            <slidelink slideid="_player.5xdVjgTZA74.6mgiVVA1yBm" displaytext="Q4" expand="false" type="slide" translationId="6LvVw3bIBNH" />
+            <slidelink slideid="_player.5xdVjgTZA74.6Zhl409du9G" displaytext="Q5" expand="false" type="slide" translationId="6EdCAVY3MZq" />
+            <slidelink slideid="_player.5xdVjgTZA74.5fNN7EJtePz" displaytext="Q6" expand="false" type="slide" translationId="5w0TcS1cnka" />
+            <slidelink slideid="_player.5xdVjgTZA74.5thB5hHl9ZN" displaytext="Q7" expand="false" type="slide" translationId="61I7quD3UcH" />
+            <slidelink slideid="_player.5xdVjgTZA74.6eo4rnWqCHR" displaytext="Q8" expand="false" type="slide" translationId="5yY3Vs7Dh2F" />
+            <slidelink slideid="_player.5xdVjgTZA74.5bat6wdxxiG" displaytext="Q10" expand="false" type="slide" translationId="606qNawCFkr" />
+            <slidelink slideid="_player.5xdVjgTZA74.5eroO03Cgco" displaytext="Q19" expand="false" type="slide" translationId="6rMdqpXn5RI" />
+            <slidelink slideid="_player.5xdVjgTZA74.6RdReHK2gnm" displaytext="Result" expand="false" type="slide" translationId="6YQKALw7uhS" />
           </links>
         </slidelink>
-        <slidelink slideid="_player.6PEZhYCw80U" displaytext="Asssessment" expand="true" type="slide">
+        <slidelink slideid="_player.6PEZhYCw80U" displaytext="Asssessment" expand="true" type="slide" translationId="6leR25bKM13">
           <links>
-            <slidelink slideid="_player.6PEZhYCw80U.5f5IieL1Wk1" displaytext="Final-assessment" expand="false" type="slide" />
-            <slidelink slideid="_player.6PEZhYCw80U.6fMo9Ateyre" displaytext="Q1" expand="false" type="slide" />
-            <slidelink slideid="_player.6PEZhYCw80U.5eaQYCRD8Vt" displaytext="Q12" expand="false" type="slide" />
-            <slidelink slideid="_player.6PEZhYCw80U.5XOwAtE5YJv" displaytext="Q17" expand="false" type="slide" />
-            <slidelink slideid="_player.6PEZhYCw80U.6Ar6hknIfHi" displaytext="Q19" expand="false" type="slide" />
-            <slidelink slideid="_player.6PEZhYCw80U.6Kvr6BGReAI" displaytext="Q20" expand="false" type="slide" />
-            <slidelink slideid="_player.6PEZhYCw80U.62Xsh927Zx3" displaytext="Q18" expand="false" type="slide" />
-            <slidelink slideid="_player.6PEZhYCw80U.6GST20rGV7D" displaytext="Q13" expand="false" type="slide" />
-            <slidelink slideid="_player.6PEZhYCw80U.5dpHLBjPoZY" displaytext="Q14" expand="false" type="slide" />
-            <slidelink slideid="_player.6PEZhYCw80U.6Ga7gydbgRR" displaytext="Q15" expand="false" type="slide" />
-            <slidelink slideid="_player.6PEZhYCw80U.6Cu5rQZGgHD" displaytext="Q16" expand="false" type="slide" />
-            <slidelink slideid="_player.6PEZhYCw80U.5qGnl7npuYk" displaytext="Q2" expand="false" type="slide" />
-            <slidelink slideid="_player.6PEZhYCw80U.64PcvHlG596" displaytext="Q3" expand="false" type="slide" />
-            <slidelink slideid="_player.6PEZhYCw80U.5cY9X031SiL" displaytext="Q4" expand="false" type="slide" />
-            <slidelink slideid="_player.6PEZhYCw80U.6Lm5jCbZPfN" displaytext="Q5" expand="false" type="slide" />
-            <slidelink slideid="_player.6PEZhYCw80U.668xYQZWU7L" displaytext="Q6" expand="false" type="slide" />
-            <slidelink slideid="_player.6PEZhYCw80U.6GbVKhDOxBI" displaytext="Q7" expand="false" type="slide" />
-            <slidelink slideid="_player.6PEZhYCw80U.6BKk8SZKO3Q" displaytext="Q8" expand="false" type="slide" />
-            <slidelink slideid="_player.6PEZhYCw80U.62cdUmIT51a" displaytext="Q9" expand="false" type="slide" />
-            <slidelink slideid="_player.6PEZhYCw80U.5WljBR2Fw49" displaytext="Q10" expand="false" type="slide" />
-            <slidelink slideid="_player.6PEZhYCw80U.5uVJcGSfAxz" displaytext="Q11" expand="false" type="slide" />
+            <slidelink slideid="_player.6PEZhYCw80U.5f5IieL1Wk1" displaytext="Final-assessment" expand="false" type="slide" translationId="5hh370NWQy0" />
+            <slidelink slideid="_player.6PEZhYCw80U.6fMo9Ateyre" displaytext="Q1" expand="false" type="slide" translationId="6aqafIaXa9w" />
+            <slidelink slideid="_player.6PEZhYCw80U.5eaQYCRD8Vt" displaytext="Q12" expand="false" type="slide" translationId="5brFN1S1UqA" />
+            <slidelink slideid="_player.6PEZhYCw80U.5XOwAtE5YJv" displaytext="Q17" expand="false" type="slide" translationId="6LJqAZzhK71" />
+            <slidelink slideid="_player.6PEZhYCw80U.6Ar6hknIfHi" displaytext="Q19" expand="false" type="slide" translationId="5yig0oBB1w9" />
+            <slidelink slideid="_player.6PEZhYCw80U.6Kvr6BGReAI" displaytext="Q20" expand="false" type="slide" translationId="6qW8f1T1dC0" />
+            <slidelink slideid="_player.6PEZhYCw80U.62Xsh927Zx3" displaytext="Q18" expand="false" type="slide" translationId="6Dtd32ADr6f" />
+            <slidelink slideid="_player.6PEZhYCw80U.6GST20rGV7D" displaytext="Q13" expand="false" type="slide" translationId="5gy3iQpwOqT" />
+            <slidelink slideid="_player.6PEZhYCw80U.5dpHLBjPoZY" displaytext="Q14" expand="false" type="slide" translationId="6HJBuupcozs" />
+            <slidelink slideid="_player.6PEZhYCw80U.6Ga7gydbgRR" displaytext="Q15" expand="false" type="slide" translationId="6Q5hEXTlH9I" />
+            <slidelink slideid="_player.6PEZhYCw80U.6Cu5rQZGgHD" displaytext="Q16" expand="false" type="slide" translationId="5W0pLbZfsLN" />
+            <slidelink slideid="_player.6PEZhYCw80U.5qGnl7npuYk" displaytext="Q2" expand="false" type="slide" translationId="6SyDjNDemlm" />
+            <slidelink slideid="_player.6PEZhYCw80U.64PcvHlG596" displaytext="Q3" expand="false" type="slide" translationId="6b8hgNyrLRK" />
+            <slidelink slideid="_player.6PEZhYCw80U.5cY9X031SiL" displaytext="Q4" expand="false" type="slide" translationId="6nxFMOOxrTq" />
+            <slidelink slideid="_player.6PEZhYCw80U.6Lm5jCbZPfN" displaytext="Q5" expand="false" type="slide" translationId="6RwSJh7N4v3" />
+            <slidelink slideid="_player.6PEZhYCw80U.668xYQZWU7L" displaytext="Q6" expand="false" type="slide" translationId="6YPRELdrFkd" />
+            <slidelink slideid="_player.6PEZhYCw80U.6GbVKhDOxBI" displaytext="Q7" expand="false" type="slide" translationId="67oKxz5ucOO" />
+            <slidelink slideid="_player.6PEZhYCw80U.6BKk8SZKO3Q" displaytext="Q8" expand="false" type="slide" translationId="6pq9n8OcDaz" />
+            <slidelink slideid="_player.6PEZhYCw80U.62cdUmIT51a" displaytext="Q9" expand="false" type="slide" translationId="5ensnaWWWKR" />
+            <slidelink slideid="_player.6PEZhYCw80U.5WljBR2Fw49" displaytext="Q10" expand="false" type="slide" translationId="6hYaQcUMtXi" />
+            <slidelink slideid="_player.6PEZhYCw80U.5uVJcGSfAxz" displaytext="Q11" expand="false" type="slide" translationId="6Kz3jVa2gWV" />
           </links>
         </slidelink>
       </links>
